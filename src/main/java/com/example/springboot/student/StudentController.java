@@ -18,7 +18,7 @@ public class StudentController {
 
     @Autowired
     public StudentController(StudentService studentService) {
-        this.studentService = new StudentService();
+        this.studentService = studentService;
     }
 
 
@@ -26,6 +26,4 @@ public class StudentController {
     public List<Student> getStudents() {
         return studentService.getStudents();
     }
-
-
 }
