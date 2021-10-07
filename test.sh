@@ -16,7 +16,12 @@ function testGetStudents {
   curl -X GET http://localhost:8080/api/v1/student | jq
 }
 
+
+function testDeleteStudent {
+  curl -X DELETE http://localhost:8080/api/v1/student/1
+}
 ###################################################################
 
-testAddStudent
+testDeleteStudent
+#testAddStudent
 #testGetStudents
