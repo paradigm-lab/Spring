@@ -20,8 +20,14 @@ function testGetStudents {
 function testDeleteStudent {
   curl -X DELETE http://localhost:8080/api/v1/student/1
 }
+
+function testPutStudent {
+  curl -X PUT http://localhost:8080/api/v1/student/2 -d name=Maria
+}
+
 ###################################################################
 
-testDeleteStudent
+testPutStudent
+#testDeleteStudent
 #testAddStudent
 #testGetStudents
