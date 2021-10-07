@@ -18,7 +18,6 @@ public class StudentConfig {
     CommandLineRunner commandLineRunner(StudentRepository repository) {
         return args -> {
             Student alex = new Student(
-                    1L,
                     "Alex",
                     "alex@gmail.com",
                     LocalDate.of(2003, JANUARY, 17),
@@ -26,7 +25,6 @@ public class StudentConfig {
             );
 
             Student matt = new Student(
-                    1L,
                     "Matt",
                     "Matt@gmail.com",
                     LocalDate.of(1980, JANUARY, 15),
@@ -34,7 +32,6 @@ public class StudentConfig {
             );
 
             Student collin = new Student(
-                    1L,
                     "Collin",
                     "collinsboniface1000@gmail.com",
                     LocalDate.of(2000, JANUARY, 8),
