@@ -1,9 +1,7 @@
 package com.example.springboot.student;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.sql.DataSource;
 import java.time.LocalDate;
@@ -28,5 +26,8 @@ public class StudentController {
     }
 
     //From the client side to the database by checking the Email (POST)
-
+    @PostMapping
+    public void registerNewStudent(@RequestBody Student student) {
+        studentService.addNewStudent(student);
+    }
 }
