@@ -27,7 +27,7 @@
     <loaded-nodes>
       <connection connection-id="052e6780-14a8-4ed7-b1ab-4812bc6a49d9">
         <schema name="pg_catalog" object-types="table, view, function" />
-        <schema name="public" object-types="table, view, function, column" />
+        <schema name="public" object-types="table, view, sequence, function, column" />
       </connection>
     </loaded-nodes>
   </component>
@@ -38,9 +38,7 @@ select 123;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="052e6780-14a8-4ed7-b1ab-4812bc6a49d9" object-ref="consoles/student@localhost" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="052e6780-14a8-4ed7-b1ab-4812bc6a49d9" />

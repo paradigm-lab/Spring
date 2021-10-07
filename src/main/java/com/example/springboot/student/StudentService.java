@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
+import java.util.Optional;
 
 //It has to be instantiated, and Also it is a bean
 //What is the difference between the two annotation @Component and @Service
@@ -25,6 +26,10 @@ public class StudentService {
     }
 
     public void addNewStudent(Student student) {
-        System.out.println(student);
+        Optional<Student> studentOptional = studentRepository.findStudentByEmail(student.getEmail());
+        if (studentOptional.isPresent()){
+            throw new IllegalStateException("Email taken");
+        }
+        studentRepository.save(student);
     }
 }
