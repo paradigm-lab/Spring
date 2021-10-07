@@ -26,4 +26,7 @@ public class StudentController {
     public List<Student> getStudents() {
         return studentService.getStudents();
     }
+
+    //From the client side to the database by checking the Email (POST)
+
 }
