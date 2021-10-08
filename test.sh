@@ -27,7 +27,7 @@ function testPutStudent {
 
 ###################################################################
 
-testPutStudent
+#testPutStudent
 #testDeleteStudent
 #testAddStudent
-#testGetStudents
+testGetStudents

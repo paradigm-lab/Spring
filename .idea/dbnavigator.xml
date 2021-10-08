@@ -26,19 +26,21 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="052e6780-14a8-4ed7-b1ab-4812bc6a49d9">
-        <schema name="pg_catalog" object-types="function" />
-        <schema name="public" object-types="table, view, sequence, function, column" />
+        <schema name="pg_catalog" object-types="table, view, function" />
+        <schema name="public" object-types="table, view, function" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="052e6780-14a8-4ed7-b1ab-4812bc6a49d9">
-      <console name="student@localhost" type="STANDARD" schema="public" session="Main"><![CDATA[select name, email, id from student;
+      <console name="student@localhost" type="STANDARD" schema="public" session="Main"><![CDATA[select * from student;
 select 123;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="052e6780-14a8-4ed7-b1ab-4812bc6a49d9" object-ref="consoles/student@localhost" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="052e6780-14a8-4ed7-b1ab-4812bc6a49d9" />
