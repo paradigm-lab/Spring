@@ -22,7 +22,7 @@ function testDeleteStudent {
 }
 
 function testPutStudent {
-  curl -X PUT http://localhost:8080/api/v1/student/2 -d name=Maria
+  curl -X PUT http://localhost:8080/api/v1/student/5 -d name=Maria&email=maria@gmail.com
 }
 
 ###################################################################
